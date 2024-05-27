@@ -1,5 +1,7 @@
 package com.springbootjpa.model;
 
+//import org.hibernate.annotations.NamedQuery;
+
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +13,8 @@ import jakarta.persistence.Table;
 @Entity//need to map java class object with database table
 //need to map porperties java class  with database table column
 
-@NamedQuery(name = "select_all_employee", query = "SELECT e FROM EMPLOYEE e")//HQL, JPQL
+//@NamedQuery(name = "select_all_employee", query = "SELECT E FROM Employee E")//HQL, JPQL
+
 @Table(name = "EMPLOYEE")
 public class Employee {
 	@Id//id will define relationship with primary key in db table
